@@ -1,16 +1,58 @@
 package Oct.Task;
 
-public class ATBStudent {
+public class ATBStudent
+{
+    int roll_no=10, age=15;
+    String firstname="Amit";
+    String lastname="Roy";
+    String std="7th";
+    String Email="amitroy@gmail.com";
+   String address ="Wagholi";
 
-    public static void main (String [] args) {
-        int roll_no, age;
-        char firstname, lastname, std, address, DOB, email, parent_name;
-        long contact_no;
+    public void display_roll_no()
+    {
+        System.out.println("Student Information");
+        System.out.println("==========================================");
+        System.out.println("Student Roll Number: "+roll_no);
+    }
+    public void display_name()
+    {
+        System.out.println("Student_Name: "+firstname+" " +lastname);
+    }
+    public void display_address()
+    {
+        System.out.println("Student_Adress: "+address);
+    }
+    public void display_age()
+    {
+        System.out.println("Student_Age : "+age);
+    }
+   public void display_email()
+   {
+       System.out.println("Student_Email : "+Email);
+   }
+    public static void main (String [] args)
+    {
 
-        ATBStudent getroll_no = new ATBStudent();
-        ATBStudent getname = new ATBStudent();
-        ATBStudent getaddress = new ATBStudent();
+        //object 1
+        ATBStudent get_roll_no = new ATBStudent();
+        get_roll_no.display_roll_no();
+
+        //object 2
+        ATBStudent get_name = new ATBStudent();
+        get_name.display_name();
+
+        //object 3
+        ATBStudent get_address = new ATBStudent();
+        get_address.display_address();
+
+        //object 4
         ATBStudent get_age = new ATBStudent();
-        ATBStudent get_contact_no = new ATBStudent();
+        get_age.display_age();
+
+        //object 5
+        ATBStudent get_email = new ATBStudent();
+        get_email.display_email();
     }
 }
+
