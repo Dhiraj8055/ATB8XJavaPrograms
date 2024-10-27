@@ -7,7 +7,7 @@ public class ATBStudent
     String lastname="Roy";
     String std="7th";
     String Email="amitroy@gmail.com";
-   String address ="Wagholi";
+    String address ="Wagholi";
 
     public void display_roll_no()
     {
@@ -27,10 +27,10 @@ public class ATBStudent
     {
         System.out.println("Student_Age : "+age);
     }
-   public void display_email()
-   {
+    public void display_email()
+    {
        System.out.println("Student_Email : "+Email);
-   }
+    }
     public static void main (String [] args)
     {
 
